@@ -1,0 +1,136 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+#page {
+    margin-bottom: 61px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+}
+
+a {
+    color: #5A7E35;
+}
+
+ul a :active {
+    color: #5A7E35;
+}
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content {
+    height: 450px;
+}
+
+
+/* Set background color and 100% height */
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+
+/* Format images */
+
+.center {
+    padding-top: 12%;
+}
+
+
+/* Set black background color, white text and some padding */
+
+footer {
+    background-color: white;
+    color: #5A7E35;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.divdown {
+    position: relative;
+    top: 50;
+}
+
+
+/* General sizing */
+
+ul.dropdown-lr {
+    width: 300px;
+}
+
+body {
+    background-color: white;
+}
+
+.img {
+    overflow: hidden;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: #5A7E35;
+    color: #5A7E35;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+a:active {
+    color: #5A7E35;
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
